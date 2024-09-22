@@ -1,9 +1,9 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 
-import Svg from "./assets/icon-success-check.svg?react";
+import Svg from "./assets/icon-success-check.svg";
 
 const contactFormSchema = z.object({
   firstName: z.string().min(1, { message: "This field is required" }),
